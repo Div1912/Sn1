@@ -1,0 +1,87 @@
+#image-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Keep the image in the background */
+    background: rgba(124, 104, 104, 0.523); /* Adjust alpha value for transparency */
+
+
+  }
+  
+  #background-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire background */
+    opacity: 1000; /* Adjust opacity for transparency */
+
+  }
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c13838;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: rgba(107, 64, 64, 0.523);
+    color: rgb(170, 86, 86);
+    padding: 1em 0;
+    text-align: center;
+  }
+  
+  nav a {
+    color: rgb(212, 212, 212);
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Success Container */
+  .success-container {
+    background: white;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(154, 154, 154, 0.1);
+    max-width: 800px;
+    margin: 2em auto;
+    text-align: center;
+  }
+  
+  .success-container h1 {
+    margin-bottom: 0.5em;
+    font-size: 2em;
+    color: #28a745;
+  }
+  
+  .success-container p {
+    margin: 1em 0;
+    font-size: 1.2em;
+    color: #f4f0f0;
+  }
+  
+  /* Button Styles */
+  button {
+    display: inline-block;
+    margin: 2em auto;
+    padding: 10px 20px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background: #d1d7dd;
+  }
+  
