@@ -35,6 +35,92 @@ header {
     font-size: 24px;
     
 }
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 1em 0;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Chatbot Popup */
+#chatbot-popup {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 300px; /* Initial width */
+  height: 400px; /* Initial height */
+  background: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  display: none;
+  transition: width 0.3s ease, height 0.3s ease;
+}
+
+#chatbot-popup.active {
+  display: block;
+}
+
+.chatbot-header {
+  display: flex;
+  justify-content: flex-end;
+  background: #007BFF;
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+}
+
+.chatbot-header button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2em;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+#open-chatbot {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#open-chatbot:hover {
+  background: #0056b3;
+}
+
+#close-chatbot {
+  background: red;
+}
+
+#close-chatbot:hover {
+  background: darkred;
+}
 
 nav ul {
     list-style-type: none;
