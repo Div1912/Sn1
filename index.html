@@ -18,21 +18,24 @@
             <img src="images/Divy.png" alt="Small Logo" id="small-logo">
             <h1>SKILL NAVIGATOR</h1>
           </div>
+ <!-- Other sections of your website -->
 
-             <!-- IBM Watson Assistant Embed Code -->
-  <script>
-    window.watsonAssistantChatOptions = {
-        integrationID: "1cd1af54-57d8-4fbc-9ee8-449f6d8e9524", // Assistant ID
-        region: "us-east", // Region based on URL
-        serviceInstanceID: "0acfa692-73e3-4661-8b8e-9537d0df01a7", // Service instance URL
-        onLoad: function(instance) { instance.render(); }
-      };
-    setTimeout(function(){
-      const t=document.createElement('script');
-      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
-      document.head.appendChild(t);
-    });
-  </script>
+  <!-- Button to open the chatbot popup -->
+  <button id="open-chatbot">Chat with us!</button>
+
+  <!-- Chatbot Popup Container -->
+  <div id="chatbot-popup" class="hidden">
+    <div class="chatbot-header">
+      <button id="minimize-chatbot">-</button>
+      <button id="maximize-chatbot">+</button>
+      <button id="close-chatbot">x</button>
+    </div>
+    <script async type='module' src='https://interfaces.zapier.com/assets/web-components/zapier-interfaces/zapier-interfaces.esm.js'></script>
+    <zapier-interfaces-chatbot-embed is-popup='false' chatbot-id='cm35h8wq5002lpnaqj9us7ahk' height='400px' width='300px'></zapier-interfaces-chatbot-embed>
+  </div>
+
+  <script src="scripts.js"></script>
+
     </body>
     </html>
     
