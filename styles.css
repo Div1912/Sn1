@@ -44,10 +44,7 @@ header {
   height: 400px; /* Adjust the height as needed */
   z-index: 1000; /* Ensure it appears above other elements */
 
-  border: 1px solid #ccc;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  overflow: hidden; /* Ensure the content fits within the container */
+
 }
 
 /* Chatbot Embed Styling */
