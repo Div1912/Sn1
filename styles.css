@@ -35,69 +35,18 @@ header {
     font-size: 24px;
     
 }
-nav a {
-  color: white;
-  margin: 0 15px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-/* Chatbot Popup */
-#chatbot-popup {
+/* Chatbot Container */
+.chatbot-container {
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 300px; /* Adjust the width as needed */
-  height: 400px; /* Adjust the height as needed */
-  background: white;
-  border: 1px solid #ccc;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
-  display: none;
-}
-
-#chatbot-popup.active {
-  display: block;
-}
-
-#open-chatbot {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  padding: 10px 20px;
-  background: #007BFF;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-#open-chatbot:hover {
-  background: #0056b3;
-}
-
-#close-chatbot {
-  position: absolute;
   top: 10px;
   right: 10px;
-  padding: 5px 10px;
-  background: red;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.3s ease;
+  width: 300px; /* Adjust the width as needed */
+  height: 400px; /* Adjust the height as needed */
+  z-index: 1000; /* Ensure it appears above other elements */
 }
 
-#close-chatbot:hover {
-  background: darkred;
-}
+/* Other styles for your website */
+
 
 
 nav ul {
