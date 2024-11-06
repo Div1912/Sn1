@@ -35,21 +35,6 @@ header {
     font-size: 24px;
     
 }
-/* General Styles */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  margin: 0;
-  padding: 0;
-}
-
-header {
-  background-color: #333;
-  color: white;
-  padding: 1em 0;
-  text-align: center;
-}
-
 nav a {
   color: white;
   margin: 0 15px;
@@ -64,37 +49,20 @@ nav a:hover {
 /* Chatbot Popup */
 #chatbot-popup {
   position: fixed;
-  bottom: 10px;
-  right: 10px;
-  width: 300px; /* Initial width */
-  height: 400px; /* Initial height */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px; /* Adjust the width as needed */
+  height: 400px; /* Adjust the height as needed */
   background: white;
   border: 1px solid #ccc;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   z-index: 1000;
   display: none;
-  transition: width 0.3s ease, height 0.3s ease;
 }
 
 #chatbot-popup.active {
   display: block;
-}
-
-.chatbot-header {
-  display: flex;
-  justify-content: flex-end;
-  background: #007BFF;
-  padding: 5px;
-  border-bottom: 1px solid #ccc;
-}
-
-.chatbot-header button {
-  background: none;
-  border: none;
-  color: white;
-  font-size: 1.2em;
-  cursor: pointer;
-  margin-left: 5px;
 }
 
 #open-chatbot {
@@ -115,12 +83,22 @@ nav a:hover {
 }
 
 #close-chatbot {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 10px;
   background: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
 }
 
 #close-chatbot:hover {
   background: darkred;
 }
+
 
 nav ul {
     list-style-type: none;
