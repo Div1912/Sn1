@@ -259,7 +259,4 @@ nav ul li a {
     h1 {
         font-size: 2.5em;
     }
-    @media screen and (max-width: 600px) {
-    .search input[type="text"] {
-        width: 50%;
-    }
+    
