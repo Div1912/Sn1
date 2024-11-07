@@ -37,38 +37,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
-// Firebase configuration
-const firebaseConfig = {
-    apiKey: "AIzaSyA7xdQ_NmD57dalDwmGOvHjeooiXvaDWqo",
-    authDomain: "skillnavigator-13d12.firebaseapp.com",
-    projectId: "skillnavigator-13d12D",
-    storageBucket: "skillnavigator-13d12.firebasestorage.app",
-    messagingSenderId: "71439730616",
-    appId: "1:71439730616:web:6ae00cc9f2627152d2714d"
-};
 
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-
-// Initialize Firebase Authentication
-const auth = firebase.auth();
-document.addEventListener("DOMContentLoaded", function() {
-    const loginForm = document.getElementById('loginForm');
-    if (loginForm) {
-        loginForm.addEventListener('submit', function(event) {
-            event.preventDefault();
-            const email = document.getElementById('username').value;
-            const password = document.getElementById('password').value;
-
-            auth.signInWithEmailAndPassword(email, password)
-                .then((userCredential) => {
-                    console.log('User logged in:', userCredential.user);
-                })
-                .catch((error) => {
-                    console.error('Error logging in:', error.message);
-                });
-        });
-    }
 
     const signupForm = document.getElementById('signupForm');
     if (signupForm) {
