@@ -39,23 +39,6 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-    const signupForm = document.getElementById('signupForm');
-    if (signupForm) {
-        signupForm.addEventListener('submit', function(event) {
-            event.preventDefault();
-            const email = document.getElementById('newUsername').value;
-            const password = document.getElementById('newPassword').value;
-
-            auth.createUserWithEmailAndPassword(email, password)
-                .then((userCredential) => {
-                    console.log('User signed up:', userCredential.user);
-                })
-                .catch((error) => {
-                    console.error('Error signing up:', error.message);
-                });
-        });
-    }
-});
 const courses = [
     { title: 'Graphic Designing', description: 'Learn the fundamentals of graphic design, including typography, color theory, and software tools like Adobe Photoshop and Illustrator.' },
     { title: 'Web Development', description: 'Master front-end and back-end web development technologies like HTML, CSS, JavaScript, and frameworks like React and Node.js.' },
