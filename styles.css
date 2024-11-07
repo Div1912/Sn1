@@ -290,15 +290,19 @@ nav ul li a {
     align-items: center;
   }
 
-  nav a {
-    display: block;
-    margin: 0.5em 0;
-  }
+nav a {
+  display: block; /* Stacking links for better tap targets */
+  margin: 10px 0; /* Adding margin for touch spacing */
+}
 
   .chatbot-container {
     width: 100%;
     height: 50%;
   }
+}
+img {
+  max-width: 100%;
+  height: auto;
 }
 
     
