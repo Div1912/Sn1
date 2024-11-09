@@ -253,15 +253,18 @@ nav ul li a {
   .course-item h3 {
     margin-top: 0;
   }
-
 .widget-container {
     display: flex;
-    gap: 20px;
     flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    justify-content: center;
 }
 
 .widget {
-    width: 200px;
+    flex: 1 1 200px; /* Allow each widget to be at least 200px and grow */
+    max-width: 250px;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
