@@ -255,46 +255,55 @@ nav ul li a {
   }
 
 /* Widget Styles */
-.grid {
-  display: grid;
-  gap: 1rem;
+.widgets .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-@media (min-width: 640px) {
-  .grid-cols-1 {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-  }
+.widget {
+  background-color: #f4f4f4;
+  color: #333;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  padding: 1rem;
+  margin: 1rem;
+  flex: 1 1 21%; /* Adjust flex-basis for the width of each widget */
+  max-width: 21%;
+  transition: transform 0.2s ease-in-out;
 }
 
-@media (min-width: 768px) {
-  .grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
+.widget:hover {
+  transform: scale(1.05);
 }
 
-@media (min-width: 1024px) {
-  .grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
+.widget img {
+  max-width: 100%;
+  border-radius: 8px;
 }
 
-.bg-blue-500 { background-color: #4299e1; }
-.bg-purple-500 { background-color: #9f7aea; }
-.bg-red-500 { background-color: #f56565; }
-.bg-green-500 { background-color: #48bb78; }
-.text-white { color: #fff; }
-.rounded-lg { border-radius: 0.5rem; }
-.shadow-md { box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); }
-.p-4 { padding: 1rem; }
-.transition { transition: all 0.2s ease-in-out; }
-.duration-300 { transition-duration: 300ms; }
-.hover\:bg-secondary:hover { background-color: #2d3748; }
-.hover\:bg-secondary\/80:hover { background-color: rgba(45, 55, 72, 0.8); }
-.transform { transform: scale(1); }
-.hover\:scale-105:hover { transform: scale(1.05); }
+.widget h2 {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
 
-.bg-primary { background-color: #3182ce; }
-.text-primary-foreground { color: #f7fafc; }
-.bg-secondary { background-color: #2c5282; }
-.text-secondary-foreground { color: #f7fafc; }
+.widget p {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+.widget button {
+  background-color: #3182ce;
+  color: #f7fafc;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.widget button:hover {
+  background-color: #2b6cb0;
+}
+
 
