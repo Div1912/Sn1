@@ -303,11 +303,11 @@ button:hover {
 }
 
 /* CSS for adding gap between the Online Programs section and the grids */
-.online-programs-section {
+.On-Campus Programs {
     margin-bottom: 20px; /* Adjust this value as needed */
 }
 
 /* Add this class to the div containing the program grids */
-.program-grids {
+.widget-container {
     margin-top: 20px; /* Adjust this value as needed */
 }
