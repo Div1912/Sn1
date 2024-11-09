@@ -301,3 +301,13 @@ button {
 button:hover {
     background-color: #0056b3;
 }
+
+/* CSS for adding gap between the Online Programs section and the grids */
+.online-programs-section {
+    margin-bottom: 20px; /* Adjust this value as needed */
+}
+
+/* Add this class to the div containing the program grids */
+.program-grids {
+    margin-top: 20px; /* Adjust this value as needed */
+}
