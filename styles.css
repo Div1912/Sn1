@@ -301,3 +301,46 @@ button {
 button:hover {
     background-color: #0056b3;
 }
+ /* Grid container */
+    .widget {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); /* Four columns */
+      gap: 20px; /* Space between grid items */
+      padding: 20px;
+    }
+
+    /* Each grid item */
+    .widget {
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+      background-color: #f9f9f9;
+    }
+
+    /* Arrow button */
+    .arrow-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: white;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      position: absolute;
+      bottom: 20px; /* Positioning inside grid item */
+      right: 20px;
+    }
+
+    .arrow-button:hover {
+      background-color: #e0e0e0;
+    }
+
+    .arrow-icon {
+      font-size: 18px;
+      color: #333;
+    }
