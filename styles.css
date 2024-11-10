@@ -311,3 +311,36 @@ button:hover {
 .widget-container {
     margin-top: 20px; /* Adjust this value as needed */
 }
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode header {
+    color: #ffffff;
+}
+
+body.dark-mode .hero {
+    background-color: #1f1f1f;
+}
+
+body.dark-mode nav ul li a {
+    color: #b3b3b3;
+}
+
+body.dark-mode .otp-form input {
+    background-color: #333;
+    color: #ffffff;
+    border: 1px solid #555;
+}
+
+body.dark-mode .otp-form button {
+    background-color: #0fde1a;
+}
+
+body.dark-mode .widget {
+    background-color: #333;
+    color: #ffffff;
+}
+
