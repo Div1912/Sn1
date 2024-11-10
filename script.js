@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", function() {
     const toggleButton = document.querySelector('.dark-mode-toggle');
+
+    // Function to toggle dark mode class on the entire body
     toggleButton.addEventListener('click', function() {
         document.body.classList.toggle('dark-mode');
-        document.querySelector('header').classList.toggle('dark-mode');
-        document.querySelectorAll('.hero, .otp-form, .widget, nav ul li a').forEach(el => el.classList.toggle('dark-mode'));
     });
 });
 
