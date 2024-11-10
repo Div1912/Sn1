@@ -1,4 +1,13 @@
 document.addEventListener("DOMContentLoaded", function() {
+    const toggleButton = document.querySelector('.dark-mode-toggle');
+    toggleButton.addEventListener('click', function() {
+        document.body.classList.toggle('dark-mode');
+        document.querySelector('header').classList.toggle('dark-mode');
+        document.querySelectorAll('.hero, .otp-form, .widget, nav ul li a').forEach(el => el.classList.toggle('dark-mode'));
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
     const otpButton = document.querySelector('.otp-form button');
     otpButton.addEventListener('click', function() {
         alert('OTP has been sent to your mobile number!');
