@@ -57,6 +57,9 @@ body.dark-mode .widget .icon {
 body.dark-mode .widget-img {
     filter: brightness(0.7);
 }
+body.dark-mode background-img  {
+    color: #ffffff;
+}
 
 #image-background {
     position: fixed;
