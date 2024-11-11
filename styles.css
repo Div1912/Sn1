@@ -285,14 +285,14 @@ nav ul li a {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    max-width: 10px;
+    max-width: 1000px; /* Allows the container to expand */
     margin: 0 auto;
     justify-content: center;
 }
 
 .widget {
-    flex: 1 1 20px; /* Allow each widget to be at least 200px and grow */
-    max-width: 25px;
+    flex: 1 1 200px; /* Minimum width of 200px for each widget */
+    max-width: 250px; /* Max width of each widget */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -301,11 +301,13 @@ nav ul li a {
 }
 
 .icon {
-    width: 10px;
-    height: 10px;
+    width: 30px; /* Adjusted width for better visibility */
+    height: 30px; /* Adjusted height for better visibility */
     margin: 0 auto 10px;
-    border-radius: 8px;
+    border-radius: 50%; /* Ensures the icon is circular */
+    background-color: #666; /* Optional: add background color for visibility */
 }
+
 
 h3 {
     font-size: 1.1em;
