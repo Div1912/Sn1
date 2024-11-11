@@ -169,58 +169,50 @@ nav ul li a {
 .goal-selection p {
     font-size: 16px;
 }
-
-.carousel {
-    background-color: #c64545;
-    padding: 30px 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 0px;
-    position: relative;
-}
-
-.carousel-container {
+/* Container for the course grid */
+.course-grid {
     display: flex;
-    overflow: hidden;
-    width: 100%;
-    box-sizing: content-box;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
-.carousel-slide {
-    display: flex;
-    transition: transform 0.3s ease-in-out;
-}
-
+/* Individual course item styling */
 .course-item {
-    min-width: 200px;
-    margin: 10px;
+    flex: 1 1 200px; /* Each course takes minimum 200px */
+    max-width: 250px; /* Limit maximum width */
     padding: 20px;
-    background-color: #fff;
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
+    text-align: center;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.carousel-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: #ff7e5f;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
+/* Icon styling within the course item */
+.course-item .icon {
+    width: 50px; /* Smaller size for icon */
+    height: 50px;
+    margin-bottom: 15px;
+    border-radius: 50%;
+    background-color: #666; /* Optional background */
 }
 
-.carousel-btn.prev {
-    left: 10px;
+/* Course title and description styling */
+.course-item h3 {
+    font-size: 1.1em;
+    margin: 10px 0;
+    color: #333;
 }
 
-.carousel-btn.next {
-    right: 10px;
+.course-item p {
+    font-size: 0.9em;
+    color: #666;
 }
 
-.carousel-btn:hover {
-    background-color: #feb47b;
-}
+
 
 .search-bar {
     display: flex;
