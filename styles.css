@@ -291,8 +291,8 @@ nav ul li a {
 }
 
 .widget {
-    flex: 1 1 200px; /* Allow each widget to be at least 200px and grow */
-    max-width: 250px;
+    flex: 1 1 20px; /* Allow each widget to be at least 200px and grow */
+    max-width: 25px;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
