@@ -343,6 +343,104 @@ button {
     border-radius: 5px;
     cursor: pointer;
 }
+/* Skills Assessment Styles */
+.skills-assessment {
+    background-color: #f8f8f8;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#assessmentResults {
+    margin-top: 30px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Personalized Learning Paths and Course Recommendations Styles */
+.learning-paths {
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Progress Tracking and Assessments Styles */
+.progress-tracking {
+    background-color: #f8f8f8;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.progress-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.progress-indicator {
+    height: 100%;
+    background-color: #4CAF50;
+    border-radius: 10px;
+}
+
+/* Feedback and Intervention System Styles */
+.feedback-interventions {
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.feedback-container {
+    margin-top: 30px;
+}
+
+/* Career Guidance and Placement Support Styles */
+.career-support {
+    background-color: #f8f8f8;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.career-services {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.career-services a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+/* Collaborative Learning and Community Styles */
+.community {
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.community-features {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.community-features a {
+    text-decoration: none;
+    color: #007bff;
+}
 
 button:hover {
     background-color: #0056b3;
