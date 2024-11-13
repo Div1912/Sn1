@@ -94,7 +94,7 @@ const firebaseConfig = {
         skillsScoreElement.textContent = `Your skills score: ${skillsScore}`;
         recommendedCoursesElement.textContent = `Recommended courses: ${recommendedCourses.join(', ')}`;
         assessmentResults.classList.remove('hidden');
-    });
+    }
 
     // Progress Tracking and Assessments
     const progressBar = document.querySelector('.progress-bar .progress-indicator');
@@ -121,7 +121,7 @@ const firebaseConfig = {
             feedbackMessage.textContent = 'Excellent work! You\'re ready to move on to the next level.';
             interventionActivities.innerHTML = '<p>Recommended activities:</p><ul><li>Explore advanced courses in your field</li><li>Start applying for internships or job opportunities</li></ul>';
         }
-    });
+    }
 
 // Skills Assessment Integration
 const startAssessmentButton = document.getElementById('startAssessment');
@@ -132,7 +132,7 @@ const recommendedCoursesElement = document.getElementById('recommendedCourses');
 startAssessmentButton.addEventListener('click', () => {
     // Perform skills assessment logic
     performSkillsAssessment();
-});
+}
 
 function performSkillsAssessment() {
     // Simulate skills assessment process
@@ -175,7 +175,7 @@ updateProgressBar();
 assessmentButton.addEventListener('click', () => {
     // Perform progress assessment logic
     performProgressAssessment();
-});
+}
 
 function performProgressAssessment() {
     // Simulate progress assessment
