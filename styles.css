@@ -441,6 +441,83 @@ button {
     text-decoration: none;
     color: #007bff;
 }
+/* Add these styles to your existing styles.css file */
+
+.question-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.dark-mode .question-container {
+    background-color: #333;
+    color: #fff;
+}
+
+.options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.option-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.option-button:hover {
+    background-color: #0056b3;
+}
+
+.results-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.category-result {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode .category-result {
+    background-color: #333;
+    color: #fff;
+}
+
+.course-recommendation {
+    margin: 15px 0;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+}
+
+.dark-mode .course-recommendation {
+    background-color: #444;
+}
+
+.duration {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.dark-mode .duration {
+    color: #aaa;
+}
 
 button:hover {
     background-color: #0056b3;
